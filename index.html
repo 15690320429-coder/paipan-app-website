@@ -3,132 +3,399 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>九维智慧 - 易学排盘应用</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        .container {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 600px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            text-align: center;
-        }
-        .logo {
-       width: 120px;
-       height: 120px;
-       margin: 0 auto 30px;
-       border-radius: 25px;
-       overflow: hidden;
-       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-   }
-   .logo img {
-       width: 100%;
-       height: 100%;
-       object-fit: contain;
-       display: block;
-   }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-            font-size: 32px;
-        }
-        .subtitle {
-            color: #666;
-            margin-bottom: 30px;
-            font-size: 16px;
-        }
-        .description {
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-        .features {
-            text-align: left;
-            margin-bottom: 30px;
-        }
-        .features h3 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-        .features ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .features li {
-            padding: 8px 0;
-            color: #666;
-        }
-        .features li:before {
-            content: "✓ ";
-            color: #667eea;
-            font-weight: bold;
-            margin-right: 8px;
-        }
-        .download-btn {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: transform 0.2s;
-        }
-        .download-btn:hover {
-            transform: translateY(-2px);
-        }
-        .footer {
-            margin-top: 40px;
-            color: #999;
-            font-size: 14px;
-        }
-    </style>
+    <meta name="description" content="九维智慧 - 专业的命理排盘工具，集八字排盘、紫微斗数、六爻占卜于一体，传承千年智慧，助您洞察命运玄机。">
+    <meta name="keywords" content="排盘,八字,紫微斗数,六爻,命理,占卜,算命,风水">
+    <title>九维智慧 - 专业命理排盘工具</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- Google Fonts - 思源黑体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-          <div class="logo">
-       <img src="Icon-192 (1).png" alt="九维智慧">
-   </div>
-        <h1>九维智慧</h1>
-        <p class="subtitle">专业的易学排盘应用</p>
-        
-        <div class="description">
-            <p>九维智慧是一款专业的易学排盘应用，提供奇门遁甲、六爻、梅花易数、紫微斗数等多种传统易学工具，帮助用户进行命理分析和决策参考。</p>
-        </div>
-        
-        <div class="features">
-            <h3>核心功能</h3>
-            <ul>
-                <li>奇门遁甲排盘</li>
-                <li>六爻占卜</li>
-                <li>梅花易数</li>
-                <li>紫微斗数</li>
-                <li>八字命理</li>
-                <li>在线课程学习</li>
+    <!-- 导航栏 -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.png" alt="九维智慧" class="logo-img">
+                <span class="logo-text">九维智慧</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">首页</a></li>
+                <li><a href="#features" class="nav-link">功能特性</a></li>
+                <li><a href="#screenshots" class="nav-link">产品展示</a></li>
+                <li><a href="#about" class="nav-link">关于我们</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
             </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        
-        <a href="#" class="download-btn">立即下载</a>
-        
-        <div class="footer">
-            <p>© 2025 九维智慧. All rights reserved.</p>
+    </nav>
+
+    <!-- Hero 首屏区域 -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="bagua-decoration bagua-1"></div>
+            <div class="bagua-decoration bagua-2"></div>
+            <div class="stars"></div>
         </div>
-    </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">传承千年智慧</span>
+                    <span class="title-line highlight">洞察命运玄机</span>
+                </h1>
+                <p class="hero-subtitle">
+                    专业命理排盘工具，集八字排盘、紫微斗数、六爻占卜于一体<br>
+                    精准算法，界面优雅，助您探索命理奥秘
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                        获取上线通知
+                    </a>
+                    <a href="#features" class="btn btn-secondary">了解更多</a>
+                </div>
+                <div class="hero-features-preview">
+                    <div class="preview-item">
+                        <span class="preview-icon">📅</span>
+                        <span class="preview-text">八字排盘</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-icon">⭐</span>
+                        <span class="preview-text">紫微斗数</span>
+                    </div>
+                    <div class="preview-item">
+                        <span class="preview-icon">🎴</span>
+                        <span class="preview-text">六爻占卜</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup">
+                    <img src="images/app-screenshot-1.png" alt="九维智慧App界面" class="phone-screen">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- 功能特性区域 -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">核心功能</span>
+                <h2 class="section-title">专业命理工具，一应俱全</h2>
+                <p class="section-desc">融合传统命理精髓与现代科技，为您提供最专业的排盘体验</p>
+            </div>
+            <div class="features-grid">
+                <!-- 八字排盘 -->
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 8v48M8 32h48" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">八字排盘</h3>
+                    <p class="feature-desc">精准计算四柱八字，详解十神、神煞、大运流年，深度剖析命理格局与人生走势。</p>
+                    <ul class="feature-list">
+                        <li>四柱八字精准排列</li>
+                        <li>十神关系详细解读</li>
+                        <li>大运流年运势分析</li>
+                        <li>神煞吉凶全面标注</li>
+                    </ul>
+                </div>
+                <!-- 紫微斗数 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <polygon points="32,4 4,32 32,60 60,32" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <circle cx="32" cy="32" r="8" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="12" r="3" fill="currentColor"/>
+                            <circle cx="52" cy="32" r="3" fill="currentColor"/>
+                            <circle cx="32" cy="52" r="3" fill="currentColor"/>
+                            <circle cx="12" cy="32" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">紫微斗数</h3>
+                    <p class="feature-desc">完整呈现紫微命盘十二宫位，详解主星、辅星、四化飞星，揭示人生各方面运势。</p>
+                    <ul class="feature-list">
+                        <li>十二宫位完整排列</li>
+                        <li>主星辅星详细标注</li>
+                        <li>四化飞星精准计算</li>
+                        <li>流年流月运势预测</li>
+                    </ul>
+                </div>
+                <!-- 六爻占卜 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <line x1="12" y1="12" x2="52" y2="12" stroke="currentColor" stroke-width="4"/>
+                            <line x1="12" y1="22" x2="28" y2="22" stroke="currentColor" stroke-width="4"/>
+                            <line x1="36" y1="22" x2="52" y2="22" stroke="currentColor" stroke-width="4"/>
+                            <line x1="12" y1="32" x2="52" y2="32" stroke="currentColor" stroke-width="4"/>
+                            <line x1="12" y1="42" x2="28" y2="42" stroke="currentColor" stroke-width="4"/>
+                            <line x1="36" y1="42" x2="52" y2="42" stroke="currentColor" stroke-width="4"/>
+                            <line x1="12" y1="52" x2="52" y2="52" stroke="currentColor" stroke-width="4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">六爻占卜</h3>
+                    <p class="feature-desc">支持手动起卦与时间起卦，自动装卦配六亲、世应、六神，提供专业断卦参考。</p>
+                    <ul class="feature-list">
+                        <li>多种起卦方式支持</li>
+                        <li>自动装卦六亲世应</li>
+                        <li>动爻变爻精准标注</li>
+                        <li>卦象解读参考建议</li>
+                    </ul>
+                </div>
+                <!-- 综合命理 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 64 64" fill="none">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="2"/>
+                            <path d="M32 4 C20 20, 20 44, 32 60 C44 44, 44 20, 32 4" stroke="currentColor" stroke-width="2"/>
+                            <ellipse cx="32" cy="32" rx="28" ry="12" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">更多功能</h3>
+                    <p class="feature-desc">持续更新的命理工具集，包含黄历查询、吉日选择、姓名分析等实用功能。</p>
+                    <ul class="feature-list">
+                        <li>万年历黄历查询</li>
+                        <li>吉日吉时精选</li>
+                        <li>五行属性分析</li>
+                        <li>更多功能持续更新</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品优势区域 -->
+    <section class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">为什么选择我们</span>
+                <h2 class="section-title">专业、精准、易用</h2>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-number">01</div>
+                    <h4>算法精准</h4>
+                    <p>基于传统命理典籍，结合现代计算技术，确保排盘结果准确无误</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-number">02</div>
+                    <h4>界面优雅</h4>
+                    <p>现代简约设计风格，融入传统文化元素，操作直观流畅</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-number">03</div>
+                    <h4>功能全面</h4>
+                    <p>八字、紫微、六爻等多种命理工具，满足不同需求</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-number">04</div>
+                    <h4>持续更新</h4>
+                    <p>定期更新优化，不断完善功能，提供更好的使用体验</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品截图展示区域 -->
+    <section class="screenshots" id="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">产品展示</span>
+                <h2 class="section-title">精心设计的用户界面</h2>
+                <p class="section-desc">简洁优雅的界面设计，让命理排盘变得简单直观</p>
+            </div>
+            <div class="screenshots-slider">
+                <div class="slider-container" id="slider-container">
+                    <div class="screenshot-item">
+                        <img src="images/screenshot-1.png" alt="八字排盘界面">
+                        <div class="screenshot-caption">八字排盘</div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/screenshot-2.png" alt="紫微斗数界面">
+                        <div class="screenshot-caption">紫微斗数</div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/screenshot-3.png" alt="六爻占卜界面">
+                        <div class="screenshot-caption">六爻占卜</div>
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="images/screenshot-4.png" alt="命理书籍界面">
+                        <div class="screenshot-caption">命理书籍</div>
+                    </div>
+                    <div class="screenshot-item text-only">
+                        <div class="more-features-text">
+                            <h4>更多功能</h4>
+                            <ul>
+                                <li>万年历黄历查询</li>
+                                <li>吉日吉时精选</li>
+                                <li>五行属性分析</li>
+                                <li>持续更新中...</li>
+                            </ul>
+                        </div>
+                        <div class="screenshot-caption">更多功能</div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn prev" id="slider-prev">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <div class="slider-dots" id="slider-dots"></div>
+                    <button class="slider-btn next" id="slider-next">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 即将发布区域 -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="coming-soon-badge">即将发布</div>
+                <h2 class="download-title">精彩即将呈现</h2>
+                <p class="download-desc">我们正在精心打磨每一个细节，只为给您带来最专业的命理排盘体验</p>
+                <div class="upcoming-features">
+                    <h3>更多功能，敬请期待</h3>
+                    <div class="upcoming-list">
+                        <div class="upcoming-item">
+                            <span class="upcoming-icon">📚</span>
+                            <span>命理书籍阅读</span>
+                        </div>
+                        <div class="upcoming-item">
+                            <span class="upcoming-icon">📅</span>
+                            <span>个人运势日历</span>
+                        </div>
+                        <div class="upcoming-item">
+                            <span class="upcoming-icon">⭐</span>
+                            <span>命盘收藏管理</span>
+                        </div>
+                        <div class="upcoming-item">
+                            <span class="upcoming-icon">🔮</span>
+                            <span>智能命理解读</span>
+                        </div>
+                    </div>
+                    <p class="upcoming-more">以及更多实用功能持续更新中...</p>
+                </div>
+                <div class="notify-section">
+                    <p>留下您的联系方式，我们将在正式发布后第一时间通知您</p>
+                    <a href="#contact" class="btn btn-primary">获取发布通知</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">关于我们</span>
+                    <h2 class="section-title">传承智慧，服务当代</h2>
+                    <p>九维智慧团队致力于将中华传统命理文化与现代科技相结合，打造专业、易用的命理工具。</p>
+                    <p>我们深入研究传统命理典籍，结合现代算法技术，确保每一次排盘都精准可靠。同时，我们注重用户体验，以简洁优雅的界面设计，让复杂的命理知识变得触手可及。</p>
+                    <p>我们相信，命理学是中华文化的瑰宝，值得被更多人了解和传承。九维智慧将持续优化产品，为用户提供更好的命理探索体验。</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <span class="value-icon">🎯</span>
+                            <span class="value-text">专业精准</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">💡</span>
+                            <span class="value-text">持续创新</span>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <span class="value-text">用户至上</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-decoration">
+                        <div class="taiji-symbol"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">联系我们</span>
+                <h2 class="section-title">期待您的反馈</h2>
+                <p class="section-desc">如有任何问题、建议或希望获取上线通知，欢迎联系我们</p>
+            </div>
+            <div class="contact-single">
+                <div class="contact-item large">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h4>电子邮箱</h4>
+                    <p class="contact-email">15690320429@163.com</p>
+                    <p class="contact-note">发送邮件时请注明"九维智慧"，我们会尽快回复</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="九维智慧" class="footer-logo">
+                    <p>专业命理排盘工具</p>
+                    <p class="footer-status">✨ 即将发布，敬请期待</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h5>产品</h5>
+                        <a href="#features">功能介绍</a>
+                        <a href="#screenshots">产品展示</a>
+                        <a href="#about">关于我们</a>
+                    </div>
+                    <div class="footer-column">
+                        <h5>支持</h5>
+                        <a href="#contact">联系我们</a>
+                        <a href="privacy.html">隐私政策</a>
+                        <a href="terms.html">用户协议</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 九维智慧. All rights reserved.</p>
+                <p>传承千年智慧，洞察命运玄机</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
